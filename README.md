@@ -3,7 +3,6 @@ study_fast_aws_backends
 1. user@AL01978827 study_fast_aws_backends % python3 -m venv venv
 2. user@AL01978827 study_fast_aws_backends % source venv/bin/activate
 3. (venv) user@AL01978827 study_fast_aws_backends % python3 -m pip install --upgrade pip
-
 4. (venv) user@AL01978827 study_fast_aws_backends % source ~/.bash_profile
 #
 export BREW_HOME=/opt/homebrew/bin
