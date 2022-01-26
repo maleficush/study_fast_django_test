@@ -1,0 +1,30 @@
+{
+  "family": "fargate-cli",
+  "runtimePlatform": {
+    "operatingSystemFamily": "LINUX"
+  },
+  "networkMode": "awsvpc",
+  "executionRoleArn": "ecrTaskRole",
+  "containerDefinitions": [
+    {
+      "name": "fargate-app",
+      "image": "815064080516.dkr.ecr.us-east-1.amazonaws.com/hello-cli:latest",
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "entryPoint": [
+        "sh",
+        "-c"
+      ]
+    }
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512"
+}
